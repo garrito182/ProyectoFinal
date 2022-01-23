@@ -1,0 +1,51 @@
+{% extends "AppSinLuz/index.html" %}
+{% load static %}
+{% block tituloQueCambia %}
+Inicio
+{% endblock %}
+{% block contenidoQueCambia %}
+<!-- Header -->
+	<header id="head">
+		<div class="container">
+			<div class="row">
+				<h1 class="lead">SIN LUZ</h1>
+				<p class="tagline"> <h2> Inicie su reclamo por falta de luz</h2> </p>
+				<p><a class="btn btn-action btn-lg"  href="{% url 'reclamos' %}">RECLAMOS</a> <a class="btn btn-action btn-lg" href="{% url 'registrarse' %}">CREE SU USUARIO</a></p>
+			</div>
+		</div>
+	</header>
+	<!-- /Header -->
+		
+	<!-- Highlights - jumbotron -->
+	<div class="jumbotron top-space">
+		<div class="container">
+			
+			<h3 class="text-center thin">Que mejor que estar sin luz, para poder reclamar.</h3>
+			
+			<div class="row">
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-cogs fa-5"></i>Mejorando el Servicio</h4></div>
+					<div class="h-body text-center">
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-flash fa-5"></i>Energia al Instante</h4></div>
+					<div class="h-body text-center">
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-heart fa-5"></i>No se Amargue</h4></div>
+					<div class="h-body text-center">
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-smile-o fa-5"></i>Soporte Humano</h4></div>
+					<div class="h-body text-center">
+					</div>
+				</div>
+			</div> <!-- /row  -->
+		
+		</div>
+	</div>
+	<!-- /Highlights -->
+{% endblock %}
